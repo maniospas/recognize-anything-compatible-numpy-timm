@@ -6,6 +6,7 @@
  * By Junnan Li
  * Based on timm code base
  * https://github.com/rwightman/pytorch-image-models/tree/master/timm
+ * Modified: import names for more recent timm versions than the original
 '''
 
 import torch
@@ -14,7 +15,7 @@ import torch.nn.functional as F
 from functools import partial
 
 from timm.models.vision_transformer import _cfg, PatchEmbed
-from timm.models.registry import register_model
+from timm.models import register_model
 from timm.layers import trunc_normal_, DropPath
 from timm.models import named_apply, adapt_input_conv
 
