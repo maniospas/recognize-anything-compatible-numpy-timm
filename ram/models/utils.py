@@ -7,7 +7,7 @@ from torch import nn
 from typing import List
 from transformers import BertTokenizer
 from urllib.parse import urlparse
-from timm.layers import download_cached_file
+from timm.models._hub import download_cached_file
 from .vit import interpolate_pos_embed, VisionTransformer
 from .swin_transformer import interpolate_relative_pos_embed
 from pathlib import Path
